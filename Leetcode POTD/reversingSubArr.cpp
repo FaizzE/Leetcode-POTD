@@ -1,6 +1,3 @@
-#include <bits/stdc++.h> // Includes all standard library headers
-
-
 /*
 LC - 1460.
 Que. You are given two integer arrays of equal length target and arr. In one step, you can select
@@ -8,6 +5,7 @@ Que. You are given two integer arrays of equal length target and arr. In one ste
 Return true if you can make arr equal to target or false otherwise.
 */
 
+#include <bits/stdc++.h>
 using namespace std;
 
 // Function to check if two vectors can be made equal by permutation
