@@ -1,0 +1,14 @@
+bool matSearch(vector<vector<int>> &mat, int x) {
+        // your code here
+        int n=mat.size(),m=mat[0].size(),a=0,b=m-1;
+        while(b>=0&&a<n)
+        {
+            if(mat[a][b]==x)
+            return 1;
+            else if(mat[a][b]>x)
+            b--;
+            else
+            a++;
+        }
+        return 0;
+    }
