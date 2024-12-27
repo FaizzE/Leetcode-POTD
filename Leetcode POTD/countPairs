@@ -1,0 +1,13 @@
+int countPairs(vector<int> &arr, int target) {
+        unordered_map<int, int> freq;
+        int cnt = 0;
+    
+        for (int num : arr) {
+            int complement = target - num;
+            if (freq[complement] > 0) {
+                cnt += freq[complement];
+            }
+            freq[num]++;
+        }
+        return cnt;
+    }
