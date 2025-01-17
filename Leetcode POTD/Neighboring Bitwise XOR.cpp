@@ -5,6 +5,7 @@ public:
         for(int i=0; i<derived.size(); i++) {
             XORR = derived[i] ^ XORR;
         }
+        
         return XORR == 0;
     }
 };
